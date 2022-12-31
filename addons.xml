@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="context.downloadit" name="Download it (with FFMPEG)" version="1.0.0" provider-name="vbprofi">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.youtube.dl" version="21.303.0+matrix.1"/>
+    </requires>
+    <extension point="kodi.context.item" library="addon.py">
+        <item>
+            <label>Download it</label>
+            <visible>Window.IsActive(10025)</visible>
+        </item>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="settings.py" >
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Download Video from Plugins</summary>
+        <summary lang="de">Download Video from Plugins</summary>
+        <description lang="en">Download it downloads videos from plugins into a directory. Set the path to the FFmpeg binary to achieve the best results. Beware! </description>
+        <description lang="de">Download it downloads videos from plugins into a directory. Set the path to the FFmpeg binary to achieve the best results. Beware! </description>
+        <platform>all</platform>
+        <language>en</language>
+        <language>de</language>
+        <license>GNU General Public License, v2</license>
+        <email>andreas at vogler dot name</email>
+        <disclaimer lang="en">The use of the add-on could be illegal depending of the page and country you resident in.</disclaimer>
+        <disclaimer lang="de">The use of the add-on could be illegal depending of the page and country you resident in.</disclaimer>
+    </extension>
+</addon>
+
 <addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="3.0.0~alpha4" provider-name="gujal">
 	<requires>
 		<import addon="script.module.six" />
@@ -203,7 +232,7 @@ In addition to what livestreams allowed you to do, you can now,
     </extension>
 </addon>
 
-<addon id="repository.vbprofi" name="vbprofis Repository for Kodi 19+" version="2.0.1" provider-name="vbprofi">
+<addon id="repository.vbprofi" name="vbprofis Repository for Kodi 19+" version="2.0.2" provider-name="vbprofi">
 	<extension point="xbmc.addon.repository" name="vbprofis Repository for Kodi 19+">
 		<dir minversion="19.0.0">
 			<info compressed="false">https://raw.github.com/vbprofi/kodi-19---repo/main/addons.xml</info>

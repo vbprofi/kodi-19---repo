@@ -1,0 +1,15 @@
+31.12.2022:
++ update debug messages and language files
++ update for os detect and choosing ffmpeg binary
++ adding windows binary exe file
++ adding arm64 binary file ffmpeg-git-arm64-static from here:
+https://www.johnvansickle.com/ffmpeg/
+
+30.12.2022:
++ fix xbmc.lognotice error for Kodi 20 (Nexus)
++ bump addon version to 1.0.0
++ update ffmpy.py to v0.3.0 from here:
+https://pypi.org/project/ffmpy/#files
+
+
+20.03.2018   -initial release
