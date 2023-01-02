@@ -21,15 +21,20 @@ import shutil
 import datetime
 from xml.dom import minidom
 
+#Deprecated:
+'''
 try:
     from ConfigParser import SafeConfigParser
 except ImportError:
     from configparser import SafeConfigParser
+'''
 
-__version__ = '1.2.1'
+import configparser
+
+__version__ = '1.2.2'
 
 # Load the configuration:
-config = SafeConfigParser()
+config = configparser.ConfigParser() #Deprecated: SafeConfigParser()
 config.read('config.ini')
 tools_path = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__))))
 output_path = config.get('locations', 'output_path')
