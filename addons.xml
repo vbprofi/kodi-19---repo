@@ -280,8 +280,8 @@ In addition to what livestreams allowed you to do, you can now,
 
 <addon id="service.xbmc.tts"
        name="Kodi Screen Reader"
-       version="1.0.9"
-       provider-name="Rick Phillips (ruuk), pvagner">
+       version="1.0.10"
+       provider-name="Rick Phillips (ruuk), pvagner, vbprofi">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
